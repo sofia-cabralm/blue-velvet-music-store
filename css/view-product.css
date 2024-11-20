@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
+/* Configurações globais */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center; /* Garante que o título estará centralizado */
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5rem;
+    color: rgb(55, 55, 210);
+    font-weight: 800;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center; /* Centraliza o título */
+}
+
+/* Container que envolve todos os detalhes */
+.container {
+    width: 90%;
+    max-width: 700px;
+    background: #2f2841;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 10px 40px #00000056;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: left; /* Alinha os detalhes à esquerda */
+}
+
+/* Estilo dos rótulos e valores */
+label {
+    font-weight: 600;
+    color: aliceblue;
+    display: block;
+    margin-top: 10px;
+}
+
+span {
+    color: #f0ffffde;
+    font-weight: 400;
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #00000056;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a imagem */
+}
+
+/* Parágrafos e listas */
+p, ul {
+    color: #f0ffffde;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Layout flexível para os detalhes */
+#product-details > div {
+    display: flex;
+    flex-direction: column; /* Coloca os rótulos e valores em coluna */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#product-details > div img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    label {
+        width: 100%; /* Deixa os rótulos ocupando toda a largura disponível */
+        margin-right: 0;
+    }
+
+    ul {
+        padding-left: 30px; /* Ajuste menor em telas pequenas */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

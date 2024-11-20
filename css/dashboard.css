@@ -1,0 +1,155 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e container principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1 {
+    color: blue; /* Aqua */
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(49, 49, 234); /* Aquamarine */
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilos para a seção de boas-vindas e logout */
+#welcomeMessage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logoutBtn {
+    background-color: #00FFFF;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: #66CDAA;
+}
+
+/* Estilos para os controles de produtos */
+#productControls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#productControls button,
+#productControls input,
+#productControls select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #fff;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#productControls input,
+#productControls select {
+    width: 200px;
+}
+
+#productControls button:hover {
+    background-color: #66CDAA;
+}
+
+/* Tabela de produtos */
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#productTable th,
+#productTable td {
+    padding: 10px;
+    text-align: center;
+}
+
+#productTable th {
+    background-color: #3d6eeb;
+    color: #121212;
+}
+
+#productTable td {
+    background-color: #2d2d2d;
+}
+
+#productTable img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Botões de ação na tabela */
+#productTable button {
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #00FFFF;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#productTable button:hover {
+    background-color: #66CDAA;
+}
+
+#productTable .delete-btn {
+    background-color: #FF6347; /* Tomate */
+}
+
+#productTable .delete-btn:hover {
+    background-color: #FF4500; /* Laranja escuro */
+}
+
+/* Paginação */
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #00FFFF;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pagination button:hover {
+    background-color: #66CDAA;
+}

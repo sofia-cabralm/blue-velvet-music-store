@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    background: #2f2841;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(55, 55, 210);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 14px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input::placeholder, select {
+    color: beige;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: rgb(80, 80, 234);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(13, 13, 64);
+}
+
+button[type="submit"]:hover {
+    background: rgb(60, 60, 214);
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+a {
+    color: rgb(55, 55, 210);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

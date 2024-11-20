@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap');
+
+/* Configurações globais */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #2f2841;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 10px 40px #00000056;
+    text-align: center;
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(55, 55, 210);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    color: aliceblue;
+    text-align: left;
+    font-weight: 600;
+}
+
+input[type="text"], 
+input[type="number"], 
+textarea, 
+input[type="file"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 14px;
+    box-shadow: 0px 10px 40px #00000056;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+    color: beige;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Botões */
+button {
+    padding: 15px;
+    background: aqua;
+    color: #2b134b;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(13, 13, 64);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: aquamarine;
+}
+
+button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="button"] {
+    background: aquamarine;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
